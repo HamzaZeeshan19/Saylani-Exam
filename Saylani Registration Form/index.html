@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-container img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <img src="https://i.brecorder.com/large/2024/05/6637eb7e6d6ae.jpg" alt="Logo Placeholder">
+  </div>
+
+  <form action="https://formsubmit.co/hamzazeeshan012@gmail.com" method="POST">
+    <h2>Registration Form</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="event">Select Course or Event</label>
+    <select name="event" id="event" required>
+      <option value="">-- Please choose an option --</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Data Science">Data Science</option>
+      <option value="Graphic Design">Graphic Design</option>
+    </select>
+
+    <button type="submit">Send</button>
+  </form>
+
+</body>
+</html>
